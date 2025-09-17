@@ -1,7 +1,8 @@
 
 const Home = () => {
   return (
-    <div>The Only Storage you need</div>
+    <div className="text-5xl text-brand-100">The Only Storage you need</div>
+    
   )
 }
 
