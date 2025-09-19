@@ -25,13 +25,12 @@ export default function SignInPage() {
       <div className="flex-1 bg-brand flex flex-col justify-center items-center p-12 text-white relative overflow-hidden">
         <div className="max-w-md text-center z-10">
           <div className="flex items-center justify-center mb-8">
-            <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                <div className="w-8 h-8 bg-brand rounded-full flex items-center justify-center">
-                  <div className="w-4 h-4 bg-white rounded-sm"></div>
-                </div>
-              </div>
+            <div className="w-20 h-20 flex items-center justify-center backdrop-blur-sm">
+              {/* <div className="w-15 h-15 flex items-center justify-center"> */}
+                <img src="/favicon.ico" alt="" />
+              {/* </div> */}
             </div>
+            
           </div>
           <h1 className="text-4xl font-bold mb-4">Drova</h1>
           <h2 className="text-2xl font-semibold mb-4">Manage your files the best way</h2>

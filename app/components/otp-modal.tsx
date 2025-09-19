@@ -111,7 +111,7 @@ export function OTPModal({ isOpen, onClose, onVerified, email }: OTPModalProps) 
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-md">
+      <DialogContent className="sm:max-w-md bg-white dark:bg-neutral-900">
         <DialogHeader className="text-center space-y-3">
           <div className="flex justify-center">
             <div className="w-16 h-16 bg-brand/10 rounded-full flex items-center justify-center">
@@ -130,7 +130,9 @@ export function OTPModal({ isOpen, onClose, onVerified, email }: OTPModalProps) 
               {otp.map((digit, index) => (
                 <Input
                   key={index}
-                  ref={(el) => (inputRefs.current[index] = el)}
+                  ref={(el: HTMLInputElement | null): void => {
+                    inputRefs.current[index] = el
+                  }}
                   type="text"
                   inputMode="numeric"
                   maxLength={1}
