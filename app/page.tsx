@@ -16,15 +16,15 @@ export default function HomePage() {
                   <div className="w-3 h-3 bg-brand rounded-sm"></div>
                 </div>
               </div>
-              <h1 className="text-xl font-semibold text-light-100">Drive</h1>
+              <h1 className="text-xl font-semibold text-light-100">Drova</h1>
             </div>
             <div className="flex items-center gap-4">
-              <Link href="/signin">
+              <Link href="/sign-in">
                 <Button variant="ghost" className="text-light-100 hover:text-brand">
                   Sign in
                 </Button>
               </Link>
-              <Link href="/signup">
+              <Link href="/sign-up">
                 <Button className="bg-brand hover:bg-brand-100 text-white">Get started</Button>
               </Link>
             </div>
@@ -41,7 +41,7 @@ export default function HomePage() {
             the world.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/signup">
+            <Link href="/sign-up">
               <Button size="lg" className="bg-brand hover:bg-brand-100 text-white px-8 py-3">
                 Start for free
               </Button>
@@ -148,9 +148,9 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto text-center">
           <h3 className="text-3xl font-bold text-white mb-4">Ready to get started?</h3>
           <p className="text-xl text-white/90 mb-8">
-            Join millions of users who trust Drive with their most important files.
+            Join millions of users who trust Drova with their most important files.
           </p>
-          <Link href="/signup">
+          <Link href="/sign-up">
             <Button size="lg" className="bg-white text-brand hover:bg-light-300 px-8 py-3">
               Create your account
             </Button>
@@ -169,7 +169,7 @@ export default function HomePage() {
                     <div className="w-3 h-3 bg-brand rounded-sm"></div>
                   </div>
                 </div>
-                <h4 className="text-lg font-semibold">Drive</h4>
+                <h4 className="text-lg font-semibold">Drova</h4>
               </div>
               <p className="text-light-200">The secure cloud storage solution for individuals and teams.</p>
             </div>
@@ -250,7 +250,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="border-t border-light-200/20 mt-8 pt-8 text-center text-light-200">
-            <p>&copy; 2024 Drive. All rights reserved.</p>
+            <p>&copy; 2024 Drova. All rights reserved.</p>
           </div>
         </div>
       </footer>
