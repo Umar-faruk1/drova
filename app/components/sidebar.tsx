@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { FileText, ImageIcon, Video, File, Folder } from "lucide-react"
+import UploadButton from "./upload-button"
 
 type SidebarItem = {
   name: string
@@ -55,6 +56,10 @@ export function Sidebar() {
           })}
         </ul>
       </nav>
+
+      <div className="px-4 pb-4">
+        <UploadButton />
+      </div>
 
       <div className="p-4">
         <div className="bg-light-300 rounded-lg p-4 text-center">

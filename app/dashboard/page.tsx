@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Progress } from "@/components/ui/progress"
 import { Search, Upload, MoreHorizontal, FileText, ImageIcon, Video, File, Folder } from "lucide-react"
+import UploadButton from "@/app/components/upload-button"
 
 const sidebarItems = [
   { name: "Dashboard", icon: Folder, active: true, href: "/dashboard" },
@@ -45,17 +46,16 @@ export default function DashboardPage() {
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-light-200 w-4 h-4" />
                 <Input
                   type="text"
-                  placeholder="CVdesign"
+                  placeholder="search...."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="pl-10 border-light-400 focus:border-brand focus:ring-brand"
                 />
               </div>
             </div>
-            <Button className="bg-brand hover:bg-brand-100 text-white ml-4">
-              <Upload className="w-4 h-4 mr-2" />
-              Upload
-            </Button>
+            <div className="ml-4">
+              <UploadButton />
+            </div>
           </div>
         </header>
 

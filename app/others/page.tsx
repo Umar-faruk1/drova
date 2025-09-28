@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import Sidebar from "@/app/components/sidebar"
+import UploadButton from "@/app/components/upload-button"
 
 // Mock other files data
 const otherFiles = [
@@ -53,6 +54,7 @@ export default function OthersPage() {
                     <SelectItem value="size">Size</SelectItem>
                   </SelectContent>
                 </Select>
+              <UploadButton />
               </div>
             </div>
 
